@@ -3,11 +3,7 @@ config smartdns
 	option tcp_server '1'
 	option rr_ttl_min '300'
 	option seconddns_tcp_server '1'
-	option seconddns_no_rule_addr '0'
-	option seconddns_no_rule_ipset '0'
-	option seconddns_no_rule_soa '0'
 	option force_aaaa_soa '1'
-	option coredump '0'
 	option rr_ttl_max '3600'
 	option ipv6_server '0'
 	option seconddns_server_group 'overseas'
@@ -24,10 +20,11 @@ config smartdns
 	option cache_size '102400'
 	option resolve_local_hostnames '1'
 	option force_https_soa '0'
-	option seconddns_force_aaaa_soa '0'
 	option auto_set_dnsmasq '1'
 	option enabled '1'
 	option seconddns_port '5335'
+	option bind_device '1'
+	option cache_persist '1'
 	option old_port '6053'
 	option old_enabled '1'
 	option old_auto_set_dnsmasq '1'
@@ -320,4 +317,10 @@ config server
 	option port '53'
 	option name '360 Secure DNS'
 	option type 'udp'
+
+config client-rule
+
+config domain-rule
+
+config ip-rule
 
