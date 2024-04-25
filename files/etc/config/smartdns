@@ -188,7 +188,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '中国电信DNS'
+	option name '湖南电信DNS'
 	option type 'udp'
 	option ip '222.246.129.80'
 
@@ -197,7 +197,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '中国电信DNS'
+	option name '湖南电信DNS'
 	option type 'udp'
 	option ip '59.51.78.210'
 
@@ -225,7 +225,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '阿里云公共DNS'
+	option name '阿里云DNS'
 	option type 'udp'
 
 config server
@@ -234,7 +234,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '阿里云公共DNS'
+	option name '阿里云DNS'
 	option type 'udp'
 
 config server
@@ -243,7 +243,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '百度公共DNS'
+	option name '百度DNS'
 	option type 'udp'
 
 config server
@@ -270,7 +270,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '中国互联网络信息中心公共DNS'
+	option name '中国互联网络信息中心sDNS'
 	option type 'udp'
 
 config server
@@ -279,7 +279,7 @@ config server
 	option server_group 'china'
 	option blacklist_ip '0'
 	option port '53'
-	option name '中国互联网络信息中心公共DNS'
+	option name '中国互联网络信息中心sDNS'
 	option type 'udp'
 
 config server
@@ -316,6 +316,24 @@ config server
 	option blacklist_ip '0'
 	option port '53'
 	option name '360安全DNS'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option ip '180.184.1.1'
+	option server_group 'china'
+	option blacklist_ip '0'
+	option port '53'
+	option name '火山引擎DNS'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option ip '180.184.2.2'
+	option server_group 'china'
+	option blacklist_ip '0'
+	option port '53'
+	option name '火山引擎DNS'
 	option type 'udp'
 
 config client-rule
