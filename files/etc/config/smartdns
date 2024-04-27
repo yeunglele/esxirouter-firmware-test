@@ -336,6 +336,24 @@ config server
 	option name '火山引擎DNS'
 	option type 'udp'
 
+config server
+	option enabled '1'
+	option ip '122.112.208.1'
+	option server_group 'china'
+	option blacklist_ip '0'
+	option port '53'
+	option name '华为云DNS'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option ip '139.9.23.90'
+	option server_group 'china'
+	option blacklist_ip '0'
+	option port '53'
+	option name '华为云DNS'
+	option type 'udp'
+
 config client-rule
 
 config domain-rule
