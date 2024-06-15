@@ -128,7 +128,7 @@ config servers
 	option alias '香港05'
 	option server 'ppg-hk.05vr9nyqg5.download'
 	option switch_enable '1'
-	option ip '183.236.51.4'
+	option ip '183.236.51.11'
 
 config servers
 	option tls '1'
@@ -782,9 +782,9 @@ config servers
 	option hashkey 'c04df1da31ee1d6af7d0d9648260c618'
 	option grouphashkey '25733855a5d3170bb526b03a1f060c4d'
 	option insecure '0'
-	option alias '奥地利01'
 	option server 'ppg-other.05vr9nyqg5.download'
 	option switch_enable '1'
+	option alias '澳大利亚01'
 
 config servers
 	option tls '1'
@@ -817,4 +817,3 @@ config servers
 	option alias '爱尔兰01'
 	option server 'ppg-other.05vr9nyqg5.download'
 	option switch_enable '1'
-
