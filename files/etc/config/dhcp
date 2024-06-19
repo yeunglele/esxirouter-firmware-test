@@ -45,14 +45,14 @@ config host
 	option name 'Linksys02153'
 	option dns '1'
 	option mac 'c4:41:1e:96:f0:2a'
-	option ip '192.168.1.100'
+	option ip '192.168.1.101'
 	option leasetime '12h'
 
 config host
 	option name 'Linksys00608'
 	option dns '1'
 	option mac 'e8:9f:80:45:25:28'
-	option ip '192.168.1.101'
+	option ip '192.168.1.100'
 	option leasetime '12h'
 
 config host
