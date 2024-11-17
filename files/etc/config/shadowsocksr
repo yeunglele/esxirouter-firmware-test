@@ -29,7 +29,7 @@ config server_subscribe
 	option auto_update '1'
 	option filter_words '过期时间/剩余流量/QQ群/官网/防失联地址/回国'
 	option switch '1'
-	list subscribe_url 'https://cdn1726927713.kunlun-c3r0j7sv-ppg.xyz/api/v1/client/subscribe?token=ce3f5054803ab75eda912394c536da0d'
+	list subscribe_url 'https://times1730514002.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=ce3f5054803ab75eda912394c536da0d'
 
 config access_control
 	option lan_ac_mode '0'
