@@ -21,10 +21,13 @@ config smartdns
 	option resolve_local_hostnames '1'
 	option force_https_soa '0'
 	option auto_set_dnsmasq '1'
-	option enabled '1'
-	option seconddns_port '5335'
 	option bind_device '1'
 	option cache_persist '1'
+	option tls_server '0'
+	option doh_server '0'
+	option log_output_mode 'file'
+	option seconddns_port '5335'
+	option enabled '1'
 	option old_port '6053'
 	option old_enabled '1'
 	option old_auto_set_dnsmasq '1'
@@ -377,8 +380,10 @@ config server
 	option type 'udp'
 
 config client-rule
+	option enabled '0'
+	option dualstack_ip_selection '1'
+	option force_https_soa '1'
 
 config domain-rule
 
 config ip-rule
-
