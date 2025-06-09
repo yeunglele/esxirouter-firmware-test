@@ -32,4 +32,4 @@
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 ./scripts/feeds update -a
-./scripts/feeds install -a -f
+./scripts/feeds install -a
