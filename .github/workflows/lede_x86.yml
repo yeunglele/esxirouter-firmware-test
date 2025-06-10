@@ -10,10 +10,10 @@ env:
   REPO: moruiris/Actions-OpenWrt
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: lede/x86/.config
-  CONFIG_BUILD: lede/x86/config.buildinfo
-  DIY_P1_SH: lede/diy-part1.sh
-  DIY_P2_SH: lede/diy-part2.sh
+  CONFIG_FILE:.config
+  CONFIG_BUILD:config.buildinfo
+  DIY_P1_SH:diy-part1.sh
+  DIY_P2_SH:diy-part2.sh
   UPLOAD_BIN: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
