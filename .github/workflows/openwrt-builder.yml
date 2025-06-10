@@ -81,11 +81,11 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_P2_SH
+        [ -e ${{ env.CONFIG_BUILD}} ] && mv ${{ env.CONFIG_BUILD}} openwrt/.config
+        chmod +x ${{ env.DIY_P2_SH }}
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        $GITHUB_WORKSPACE/${{ env.DIY_P2_SH }}
+        make defconfig
 
     - name: Download package
       id: package
