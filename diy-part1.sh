@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 function mvdir() {
@@ -34,7 +34,7 @@ mv openwrt-packages/luci-app-adguardhome ./packages_luci-app-adguardhome/
 mv openwrt-packages/adguardhome ./packages_luci-app-adguardhome/
 rm -rf openwrt-packages
 
-git clone https://github.com/fw876/helloworld ./packages_luci-app-ssr-plus 
+#git clone https://github.com/fw876/helloworld ./packages_luci-app-ssr-plus 
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 
