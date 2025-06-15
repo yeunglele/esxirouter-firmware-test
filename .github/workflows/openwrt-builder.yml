@@ -83,7 +83,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
     - name: 缓存加速
-      if: env.CACHEWRTBUILD_SWITCH == 'true'
+      #if: env.CACHEWRTBUILD_SWITCH == 'true'
       uses: stupidloud/cachewrtbuild@main
       with:
         ccache: 'true'
@@ -160,7 +160,7 @@ jobs:
         retain_days: 0
         keep_minimum_runs: 2
 
-    - name: 移除过期Releases
+    - name: 删除旧版本
       uses: dev-drprasad/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
