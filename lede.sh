@@ -9,11 +9,11 @@ rm -rf $1
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns ./packages_luci-app-smartdns/luci-app-smartdns
 #git clone https://github.com/pymumu/openwrt-smartdns ./packages_luci-app-smartdns/smartdns
 #二次修改
-git clone https://github.com/kenzok8/openwrt-packages
+git clone https://github.com/kenzok8/small-package
 mkdir ./packages_luci-app-smartdns
-mv openwrt-packages/luci-app-smartdns ./packages_luci-app-smartdns/
-mv openwrt-packages/smartdns ./packages_luci-app-smartdns/
-rm -rf openwrt-packages
+mv small-package/luci-app-smartdns ./packages_luci-app-smartdns/
+mv small-package/smartdns ./packages_luci-app-smartdns/
+rm -rf small-package
 #####################################################################################################
 
 ########################################luci-app-adguardhome##########################################
@@ -22,11 +22,11 @@ rm -rf openwrt-packages
 #二次修改,弃用
 #git clone https://github.com/kongfl888/luci-app-adguardhome
 #三次修改
-git clone https://github.com/kenzok8/openwrt-packages
+git clone https://github.com/kenzok8/small-package
 mkdir ./packages_luci-app-adguardhome
-mv openwrt-packages/luci-app-adguardhome ./packages_luci-app-adguardhome/
-mv openwrt-packages/adguardhome ./packages_luci-app-adguardhome/
-rm -rf openwrt-packages
+mv small-package/luci-app-adguardhome ./packages_luci-app-adguardhome/
+mv small-package/adguardhome ./packages_luci-app-adguardhome/
+rm -rf small-package
 #######################################################################################################
 
 ########################################luci-app-passwall##########################################
